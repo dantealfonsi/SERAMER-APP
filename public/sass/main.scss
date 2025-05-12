@@ -1,0 +1,25 @@
+@use "page/LogIn";
+@use "page/dashboard";
+@use "components/forms";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+  overflow-x: hidden;
+}
+
+$route-img-background: "../img/background.jpg";
+
+body {
+  background: linear-gradient(
+      to right,
+      rgba(0, 105, 224, 0.9),
+      rgba(3, 119, 250, 0.9)
+    ),
+    url("#{$route-img-background}") no-repeat center / cover fixed;
+
+  width: 100vw;
+  height: 100vh;
+}

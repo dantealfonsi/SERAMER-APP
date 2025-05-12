@@ -1,0 +1,50 @@
+.form-component {
+  background: #fff;
+  width: 85%;
+  height: 85%;
+  padding: 3%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 2% 0;
+
+  .form-group {
+    margin: 2% 0;
+  }
+
+  &__button-canceled{
+    width: 100%;
+    background: #005fcc;
+    padding: 5%;
+    color: #d6ebff;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+
+    &:hover{
+      background: #0377fa;
+      color: #fff;
+      font-weight: 600;
+    }
+  }
+
+  &__button{
+    width: 100%;
+    background: #005fcc;
+    padding: 5%;
+    color: #d6ebff;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+
+    &:hover{
+      background: #0377fa;
+      color: #fff;
+      font-weight: 600;
+    }
+  }
+}

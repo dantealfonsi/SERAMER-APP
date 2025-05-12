@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../public/sass/main.css">
+  <title>UI/Boostrap</title>
+</head>
+
+<body>
+  <main class="container min-vh-100 d-flex flex-column justify-content-between">
+    <div class="row">
+      <article
+        class="article col-12 mt-0 mt-lg-6 pt-xl-7 d-flex flex-column align-items-center justify-content-center text-center">
+        <img src="../public/img/icon-seramer.png" class="article__img" alt="icono de la institución">
+        <h1 class="article__h1">
+          SERAMER
+        </h1>
+      </article>
+    </div>
+    <div class="row">
+      <section class="col-12 d-flex flex-column align-items-center my-1 my-lg-0">
+        <form action="./index-2.html"
+          class="form form--transparent col-11 col-md-8 col-lg-5 col-xl-4 d-flex flex-column align-items-center justify-content-center gap-3 py-3">
+          <div class="form-floating form__group mb-3 mb-lg-1">
+            <input type="text" class="form-control form__input" id="username" placeholder="Ingrese un nombre de usuario">
+            <label for="username" class="form__label">Nombre de usuario:</label>
+          </div>
+          <div class="form-floating form__group">
+            <input type="password" class="form-control form__input" id="password" placeholder="Ingrese una contraseña">
+            <label for="password" class="form__label">Contraseña:</label>
+          </div>
+          <div class="row align-items-center my-1">
+            <a href="" class="form__a fst-italic">¿Olvidaste tu contraseña?</a>
+          </div>
+          <button type="submit" class="btn form__button shadow py-3">
+            Iniciar sesión
+          </button>
+        </form>
+      </section>
+    </div>
+    <div class="row">
+      <footer class="footer d-flex flex-column align-items-center my-3">
+        <p class="footer__p">Redes sociales</p>
+        <div class="d-flex flex-wrap gap-3 justify-content-center">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="footer__svg my-1">
+            <path
+              d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"
+              fill="#ffffff" />
+          </svg>
+          <svg xmlns=" http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="footer__svg my-1">
+            <path
+              d="M181.3 32.4c17.4 2.9 29.2 19.4 26.3 36.8L197.8 128l95.1 0 11.5-69.3c2.9-17.4 19.4-29.2 36.8-26.3s29.2 19.4 26.3 36.8L357.8 128l58.2 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-68.9 0L325.8 320l58.2 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-68.9 0-11.5 69.3c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8l9.8-58.7-95.1 0-11.5 69.3c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8L90.2 384 32 384c-17.7 0-32-14.3-32-32s14.3-32 32-32l68.9 0 21.3-128L64 192c-17.7 0-32-14.3-32-32s14.3-32 32-32l68.9 0 11.5-69.3c2.9-17.4 19.4-29.2 36.8-26.3zM187.1 192L165.8 320l95.1 0 21.3-128-95.1 0z"
+              fill="#ffffff" />
+          </svg>
+        </div>
+      </footer>
+    </div>
+  </main>
+</body>
+
+</html>
