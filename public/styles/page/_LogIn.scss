@@ -1,3 +1,4 @@
+@use "../abstracts/mixins" as *;
 $text-shadow: text-shadow(0px, 0px, 10px, rgba(0, 0, 0, 0.5));
 
 .article {
@@ -99,7 +100,7 @@ $text-shadow: text-shadow(0px, 0px, 10px, rgba(0, 0, 0, 0.5));
 }
 
 /* tf un poco mas grande */
-@media(min-width: 481px){
+@include respond(xs){
   .form{
     &__group{
       width: 85%;
@@ -126,8 +127,9 @@ $text-shadow: text-shadow(0px, 0px, 10px, rgba(0, 0, 0, 0.5));
     }
   }
 }
-/* Tf tipo tablet Md */
-@media (min-width: 820px) {
+
+/* Tf tipo tablet */
+@include respond(custom-md){
   .article {
     &__h1 {
       font-size: 3em;
@@ -169,8 +171,9 @@ $text-shadow: text-shadow(0px, 0px, 10px, rgba(0, 0, 0, 0.5));
     }
   }
 }
-/* pc mas pequeñas lg */
-@media (min-width: 1280px) {
+
+/* pc grandes */
+@include respond(xl){
   .article {
     &__h1 {
       font-size: 1.4em;
@@ -211,8 +214,9 @@ $text-shadow: text-shadow(0px, 0px, 10px, rgba(0, 0, 0, 0.5));
     }
   }
 }
-/* Pc grandes xl */
-@media (min-width: 1559px) {
+
+/* Pc mas grandes*/
+@include respond(custom-xl){
   .article {
     &__h1 {
       font-size: 3.2em;
