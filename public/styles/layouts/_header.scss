@@ -20,7 +20,7 @@
   
     &__a,
     &__button {
-      background: #ffffff;
+      background: #fff;
       border-radius: 5px;
       border: none;
       padding: 0.5rem;
@@ -48,7 +48,7 @@
       border-radius: 0.5rem;
       border: none;
       padding: 0.5rem 0;
-      background: #ffffff;
+      background: #fff;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       transform: translateY(-6px);
       pointer-events: none;
@@ -74,6 +74,9 @@
   
     &__a {
       text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   
     &__icon {

@@ -10,7 +10,8 @@
     integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../public/styles/main.css">
-  <title>Dashboard</title>
+  <link rel="icon" type="image/svg+xml" href="../public/img/icon-seramer.png" />
+  <title>Panel de Control | SERAMER</title>
 </head>
 
 <body>
@@ -205,9 +206,36 @@
             </article>
           </div>
         </section>
+        <!-- ToasAlert -->
+        <article class="toast article-toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header article-toast__header">
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              viewBox="0 0 448 512"
+              class="article-toast__icon"
+            >
+              <path d="M342.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 178.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l80 80c12.5 12.5 32.8 12.5 45.3 0l160-160zm96 128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 402.7 54.6 297.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l256-256z"/>
+            </svg>  
+            <h6 class="article-toast__title">Lorem Ipsus</h6>
+            <small class="article-toast__time">11 mins ago</small>
+            <button type="button" class="btn-close article-toast__close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body article-toast__body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.
+          </div>
+        </article>
       </main>
     </div>
   </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const toastEl = document.querySelector('.toast');
+      const toast = new bootstrap.Toast(toastEl, {
+        autohide: false
+      });
+      toast.show();
+    });
+  </script>
 </body>
 
 </html>

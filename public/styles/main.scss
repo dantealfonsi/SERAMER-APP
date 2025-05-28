@@ -3,19 +3,20 @@
 @use "layouts/header";
 @use "components/forms";
 @use "components/loader";
+@use "components/toastAlert";
 @use "page/LogIn";
 @use "page/dashboard";
 
 $route-img-background: "../img/background.jpg";
 
 body {
-  background: linear-gradient(
-      to right,
-      rgba(0, 105, 224, 0.9),
-      rgba(3, 119, 250, 0.9)
-    ),
-    url("#{$route-img-background}") no-repeat center / cover fixed;
+  background: url("#{$route-img-background}") no-repeat center / cover fixed;
 
   width: 100vw;
   height: 100vh;
+
+  .main-login{
+    background-image: linear-gradient(to left, transparent 30%, #edfaff 60%);
+    ;
+  }
 }

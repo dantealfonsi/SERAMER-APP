@@ -5,7 +5,7 @@ $text-shadow: text-shadow(0px, 0px, 10px, rgba(0, 0, 0, 0.5));
   &__h1 {
     font-weight: bold;
     font-size: 1.5em;
-    color: #ffffff;
+    color: #fff;
     text-shadow: $text-shadow;
   }
 }
@@ -32,14 +32,14 @@ $text-shadow: text-shadow(0px, 0px, 10px, rgba(0, 0, 0, 0.5));
 
     &:focus {
       background: transparent;
-      color: #ffffff;
-      border-bottom: 2px solid #ffffff;
+      color: #fff;
+      border-bottom: 2px solid #fff;
       box-shadow: none;
     }
   }
 
   &__label{
-    color: #ffffff !important;
+    color: #fff !important;
   }
 
   &__a {
@@ -56,7 +56,7 @@ $text-shadow: text-shadow(0px, 0px, 10px, rgba(0, 0, 0, 0.5));
   }
 
   &__button {
-    background-color: #ffffff;
+    background-color: #fff;
     color: #0377fa;
     width: 90%;
     border-radius: 50px;
@@ -72,7 +72,7 @@ $text-shadow: text-shadow(0px, 0px, 10px, rgba(0, 0, 0, 0.5));
     }
 
     &:focus {
-      background-color: #ffffff !important;
+      background-color: #fff !important;
       color: #0377fa !important;
       box-shadow: none;
       outline: none;
@@ -82,7 +82,7 @@ $text-shadow: text-shadow(0px, 0px, 10px, rgba(0, 0, 0, 0.5));
 
 .footer {
   &__p {
-    color: #ffffff;
+    color: #fff;
     font-size: 1.25em;
     font-weight: 700;
     text-shadow: $text-shadow;
@@ -113,12 +113,12 @@ $text-shadow: text-shadow(0px, 0px, 10px, rgba(0, 0, 0, 0.5));
       font-size: 1.15em;
   
       &:focus {
-        border-bottom: 3px solid #ffffff;
+        border-bottom: 3px solid #fff;
       }
     }
 
     &__label{
-      color: #ffffff !important;
+      color: #fff !important;
     }
   }
   .footer{
@@ -152,7 +152,7 @@ $text-shadow: text-shadow(0px, 0px, 10px, rgba(0, 0, 0, 0.5));
       font-size: 1.15em;
   
       &:focus {
-        border-bottom: 3px solid #ffffff;
+        border-bottom: 3px solid #fff;
       }
     }
 
@@ -174,43 +174,104 @@ $text-shadow: text-shadow(0px, 0px, 10px, rgba(0, 0, 0, 0.5));
 
 /* pc grandes */
 @include respond(xl){
-  .article {
-    &__h1 {
-      font-size: 1.4em;
-    }
+  .login{
+    width: 100%;
+    height: 100vh;
+    margin: 0 -2rem;
 
-    &__img {
-      width: 9rem;
+    &__header{
+      width: 100%;
       height: auto;
-    }
-  }
-
-  .form{
-    &__a {
-      font-size: 1.05em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
-    &__group{
-      width: 90%;
+    &__brand{
+      width: 15%;
+      height: auto;
+      margin-bottom: 1rem;
+      background: #d6ebff;
+      border-radius: 25px;
+      box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.1);
     }
-    
-    &__input{
-      border-bottom: 3px solid silver;
-      font-size: 1em;
-  
-      &:focus {
-        border-bottom: 3px solid #ffffff;
+
+    &__title, 
+    &__sub-title {
+      font-size: 1.8rem;
+      text-align: center;
+      color: #182837;
+      font-weight: 600;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    &__sub-title{
+      font-size: 1.2rem;
+    }
+
+    &__form{
+      width: 50%;
+      height: auto;
+      margin-top: 1.5rem;
+    }
+
+    &__label{
+      color: #182837;
+      font-weight: 500;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    &__field{
+      color: #182837;
+      font-size: 1rem;
+      outline: none;
+      border-bottom: 2px solid #999999;
+      transition: all 0.3s ease;
+
+      &:focus{
+        border-bottom-color: #0377fa;
       }
     }
-  }
 
-  .footer {
-    &__p {
-      font-size: 1em;
+    &__a{
+      font-size: 1rem;
+      color: #999999;
+      margin: 0.5rem 0;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: all 0.2s linear;
+
+      &:hover{
+        color: #0377fa;
+      }
     }
 
-    &__svg {
-      width: 5%;
+    &__button{
+      width: 50%;
+      height: auto;
+      margin-top: 1rem;
+      background: #005fcc;
+      color: #d6ebff;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: all 0.2s linear;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+
+      &:hover{
+        background: #0377fa;
+        color: #fff;
+      }
+    }
+
+    &__title-plus{
+      font-size: 7rem;
+      color: #d6ebff; 
+      writing-mode: vertical-rl;
+      line-height: 1; 
+      letter-spacing: normal;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
   }
 }
@@ -242,7 +303,7 @@ $text-shadow: text-shadow(0px, 0px, 10px, rgba(0, 0, 0, 0.5));
       font-size: 1.2em;
   
       &:focus {
-        border-bottom: 3px solid #ffffff;
+        border-bottom: 3px solid #fff;
       }
     }
 

@@ -13,6 +13,24 @@
     .form-group {
       margin: 2% 0;
     }
+
+    &__label{
+      color: #182837;
+      font-weight: 600;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    &__field{
+      color: #182837;
+      font-size: 1rem;
+      outline: none;
+      border-bottom: 2px solid #999999;
+      transition: all 0.3s ease;
+
+      &:focus{
+        border-bottom-color: #0377fa;
+      }
+    }
   
     &__button-canceled{
       width: 100%;
