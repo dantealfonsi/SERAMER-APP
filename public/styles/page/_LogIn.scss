@@ -221,15 +221,55 @@ $text-shadow: text-shadow(0px, 0px, 10px, rgba(0, 0, 0, 0.5));
       text-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
-    &__field{
-      color: #182837;
-      font-size: 1rem;
-      outline: none;
-      border-bottom: 2px solid #999999;
-      transition: all 0.3s ease;
+    &__input-icon{
+      position: relative;
 
-      &:focus{
-        border-bottom-color: #0377fa;
+      input{
+        padding-left: 2.5rem;
+      }
+
+      &__field{
+        color: #182837;
+        font-size: 1rem;
+        outline: none;
+        border-bottom: 2px solid #999999;
+        transition: all 0.3s ease;
+  
+        &:focus{
+          border-bottom-color: #0377fa;
+        }
+      }
+    }
+
+    &__icon-button{
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      border: none;
+      background: none;
+    }
+
+    &__icon{
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      border: none;
+      background: none;
+      fill: #999999; 
+      width: 1rem;
+      height: auto;
+    }
+
+    &__icon-view{
+      fill: #999999; 
+      width: 1rem;
+      height: auto;
+      transition: all 0.2s linear;
+
+      &:hover{
+        fill: #0377fa;
       }
     }
 
@@ -272,6 +312,25 @@ $text-shadow: text-shadow(0px, 0px, 10px, rgba(0, 0, 0, 0.5));
       line-height: 1; 
       letter-spacing: normal;
       text-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    &__error{
+      position: absolute;
+      top: 88%;
+    }
+
+    &__error-icon{
+      fill: #FF7F50; 
+      width: 1.5rem;
+      height: auto;
+    }
+
+    &__error-p{
+      font-size: 1rem;
+      font-weight: 500;
+      color: #182837;
+      margin-bottom: 0;
+      padding: 0.2rem;
     }
   }
 }

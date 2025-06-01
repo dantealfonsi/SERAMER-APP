@@ -1,14 +1,22 @@
 @use "../abstracts/mixins" as *;
 
 @include respond(xl){
+
   .form-component {
     background: #fff;
-    width: 85%;
-    height: 85%;
+    width: 100%;
+    height: 100%;
     padding: 3%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    margin: 2% 0;
+
+    &__title{
+      color: #182837;
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding-left: 1rem;
+    }
   
     .form-group {
       margin: 2% 0;
