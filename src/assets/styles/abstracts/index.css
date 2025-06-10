@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* Labels */
+/* 
+  // Breakpoints actualizados y más representativos
+  @mixin respond($breakpoint) {
+    @if $breakpoint == desktop-lg {
+      @media (min-width: 1440px) { @content; } // Pantallas grandes, escritorio extendido
+    }
+    @else if $breakpoint == laptop {
+      @media (min-width: 1280px) and (max-width: 1439px) { @content; } // Laptops comunes
+    }
+    @else if $breakpoint == tablet {
+      @media (min-width: 768px) and (max-width: 1279px) { @content; } // Tablets y pantallas medianas
+    }
+    @else if $breakpoint == mobile {
+      @media (max-width: 767px) { @content; } // Smartphones
+    }
+  }
+*//*# sourceMappingURL=index.css.map */

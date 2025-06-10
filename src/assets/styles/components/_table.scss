@@ -1,0 +1,258 @@
+@use "../abstracts" as *;
+
+
+@include respond(xl){
+  
+  .btn-icons{
+    width: 1.3rem;
+    height: 1.3rem;
+    object-fit: contain;
+    fill: #d6ebff;
+    display: flex;
+  }
+
+  .options{
+    background: #fff;
+  }
+
+  .options-filter{
+    border-radius: 10px;
+    background: #fff;
+    color: #182837;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 1rem;
+
+    &__button{
+      width: 100%;
+      height: auto;
+      border: none;
+      border-radius: 10px;
+      color: #d6ebff;
+      background: #005fcc;
+      font-weight: 500;
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+      transition: all 0.3s ease;
+
+      &:hover{
+        background: #0377fa !important;
+        color: #fff !important;
+      }
+    }
+
+    &__content{
+      overflow-y: auto;
+      width: 25%;
+      height: auto;
+      max-height: 25%;
+      border: 1px solid #d6ebff;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);;
+    }
+  }
+
+  .input-icon-wrapper {
+    position: relative;
+
+    input{
+      padding-left: 2.2rem;
+    }
+
+    &__field{
+      color: #182837;
+      font-size: 0.9rem;
+      outline: none;
+      border-bottom: 2px solid #999999;
+      transition: all 0.3s ease;
+
+      &:focus{
+        border-bottom-color: #0377fa;
+      }
+    }
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    fill: #999999; 
+    width: 1rem;
+    height: auto;
+  }
+
+  .button-filter{
+    background: #005fcc;
+    color: #d6ebff;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 10px;
+    padding: 0.65rem 1rem;
+    border: none;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease;
+
+    &:hover{
+      background: #0377fa;
+      color: #fff;
+
+      .btn-icons{
+        fill: #fff;
+      }
+    }
+
+    &__canceled{
+      background: #6d6d6d;
+      color: #d6ebff;
+
+      &:hover{
+        background: #999999;
+        color: #fff;
+      }
+    }
+  }
+
+  .section-table{
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 1rem;
+
+    &__title{
+      font-size: 1.2rem;
+      text-align: center;
+      font-weight: 600;
+    }
+  }
+
+  .header-table{
+    display: flex;
+    color: #182837;
+    margin-bottom: 0.5rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-table__show {
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+  
+    label, span {
+      margin-bottom: 0; // Nuevo: elimina espacio inferior
+    }
+  
+    select {
+      width: 70px; // Nuevo: ancho personalizado para el select
+      padding: 0.25rem 0.5rem; // Nuevo: padding reducido para apariencia más compacta
+    }
+  }
+
+  .dinamic-table{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    table-layout: fixed;
+    color: #0377fa;
+    
+
+    th,
+    td{
+      word-wrap: break-word;
+    }
+
+    &__actions {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    &__button-action {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #005fcc;
+      border: none;
+      border-radius: 7px;
+      cursor: pointer;
+      padding: 0.4rem;
+      transition: transform 0.2s ease;
+      
+      &:hover {
+        background: #0377fa;
+
+        svg {
+          fill: #ffffff;
+          object-fit: contain;
+        }
+      }
+  
+      svg {
+        width: 1.35rem;
+        height: 1.35rem;
+        fill: #d6ebff;
+        display: flex;
+      }
+    }
+  }
+
+  .switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+  
+    input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+  
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgb(182, 182, 182);
+      transition: 0.4s;
+      border-radius: 10px;
+  
+      &:before {
+        position: absolute;
+        content: "";
+        height: 1.4em;
+        width: 1.4em;
+        border-radius: 8px;
+        left: 0.3em;
+        bottom: 0.3em;
+        transform: rotate(270deg);
+        background-color: rgb(255, 255, 255);
+        transition: 0.4s;
+      }
+    }
+  
+    input:checked 
+    + 
+    .slider {
+      background-color: #0377fa;
+  
+      &:before {
+        transform: translateX(1.5em);
+      }
+    }
+  
+    input:focus 
+    + 
+    .slider {
+      box-shadow: 0 0 1px #2196F3;
+    }
+  }
+}
+

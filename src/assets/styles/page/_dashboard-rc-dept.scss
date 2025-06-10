@@ -1,0 +1,155 @@
+@use "../abstracts" as *;
+
+@include respond(xl) {
+  .db-body {
+    background: #edfaff;
+  }
+
+  .section-dashboard {
+    border: none;
+    width: 95%;
+
+    .row {
+      .col-4 {
+        position: relative;
+
+        // Aplica borde divisorio solo si no es el último
+        &:not(:last-child)::after {
+          content: "";
+          position: absolute;
+          top: 10%;
+          bottom: 10%;
+          right: 0;
+          width: 1px;
+          background-color: #d3d3d3; // Gris claro
+        }
+      }
+    }
+
+    &__revenue {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+  }
+
+  .title-identifier {
+    color: #6d6d6d;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-left: 0.2rem;
+    text-align: left;
+  }
+
+  .cards {
+    width: 100%;
+
+    &__title,
+    &__mount {
+      color: #6d6d6d;
+      text-align: center;
+      margin-bottom: 0;
+    }
+
+    &__title {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__select {
+      font-size: 0.7rem;
+    }
+
+    &__mount {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #182837;
+    }
+
+    &__info {
+      margin-bottom: 0;
+      font-size: 1rem;
+    }
+
+    &__icon {
+      width: 1.5rem;
+      height: 1.5rem;
+      object-fit: contain;
+      border-radius: 5rem;
+      padding: 0.2rem;
+    }
+
+    &__profit {
+      background: #d6ebff;
+      fill: #005fcc;
+    }
+
+    &__loss {
+      background: #d6ebff;
+      fill: #6d6d6d;
+    }
+  }
+
+  .planning-histo-data {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+
+    &__title{
+      color: #6d6d6d;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    &__details{
+      width: 100%;
+      margin-bottom: 0;
+      font-size: 1rem;
+      font-weight: 500;
+      color: #6d6d6d;
+    }
+
+    &__button{
+      width: 50%;
+      padding: 0.5rem;
+      background: #005fcc;
+      color: #d6ebff;
+      font-size: 0.8rem;
+      border-radius: 10px;
+      border: none;
+      font-weight: 600;
+      text-align: center;
+      text-decoration: none;
+      transition: all 0.3s ease;
+  
+      &:hover{
+        background: #0377fa;
+        color: #fff;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .revenue-list{
+    background: #fff;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    width: 100%;
+  }
+}

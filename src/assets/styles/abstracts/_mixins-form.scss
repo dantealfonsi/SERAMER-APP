@@ -1,0 +1,56 @@
+/* Labels */
+@mixin label-style {
+  color: #6d6d6d;
+  font-weight: 500;
+  font-size: 1rem;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@mixin input-style {
+  color: #182837;
+  font-size: 0.9rem;
+  outline: none;
+  border: 1px solid #999999;
+  border-bottom: 1px solid #999999;
+  transition: all 0.3s ease;
+
+  &:focus {
+    border-bottom-color: #0377fa;
+  }
+}
+
+@mixin group-elements {
+  position: relative;
+}
+
+@mixin input-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  fill: #999999;
+  width: 1rem;
+  height: auto;
+}
+
+@mixin button-icon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+}
+
+@mixin view-icon {
+  fill: #999999;
+  width: 1rem;
+  height: auto;
+  transition: all 0.2s linear;
+
+  &:hover {
+    fill: #0377fa;
+  }
+}

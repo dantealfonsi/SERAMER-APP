@@ -1,0 +1,25 @@
+@use "base/reset";
+@use "abstracts/tesla";
+@use "abstracts/roboto";
+/* Layouts */
+@use "layouts/top-section";
+@use "layouts/header";
+@use "layouts/sidebar";
+@use "layouts/content";
+/* Components */
+@use "components/forms";
+@use "components/table";
+@use "components/loader";
+@use "components/toast-alert";
+/* Pages */
+@use "page/log-in";
+@use "page/recover-password";
+@use "page/dashboard-rc-dept";
+
+$route-img-background: "../img/background.jpg";
+
+body {
+  background: url("#{$route-img-background}") no-repeat center / cover fixed;
+  width: 100vw;
+  height: 100vh;
+}

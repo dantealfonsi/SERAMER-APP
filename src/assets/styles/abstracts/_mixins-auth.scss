@@ -1,0 +1,50 @@
+$font-title: 'Tesla', sans-serif;
+
+@mixin auth-form-base {
+  width: 100%;
+  height: 100vh;
+  margin: 0 -2rem;
+}
+
+@mixin auth-form-title-plus {
+  font-size: 7rem;
+  color: #d6ebff;
+  writing-mode: vertical-rl;
+  line-height: 1;
+  font-family: $font-title;
+  letter-spacing: normal;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@mixin auth-error {
+  position: absolute;
+}
+
+@mixin auth-error-icon {
+  fill: #ff7f50;
+  width: 1.5rem;
+  height: auto;
+}
+
+@mixin auth-error-message {
+  font-size: 1rem;
+  color: #6d6d6d;
+  margin-bottom: 0;
+  padding: 0.2rem;
+}
+
+@mixin auth-button {
+  background: #005fcc;
+  color: #d6ebff;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.2s linear;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+  font-size: 0.9rem;
+  
+  &:hover {
+    background: #0377fa;
+    color: #fff;
+  }
+}
