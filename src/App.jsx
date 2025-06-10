@@ -1,3 +1,7 @@
+import { Routes, Route } from 'react-router-dom';
+import Detalle from './modules/atencion_cliente/quejas/pages/Detalle.jsx';
+import ListadoGeneral from './modules/atencion_cliente/quejas/pages/ListadoGeneral.jsx';
+import NuevaQueja from './modules/atencion_cliente/quejas/pages/NuevaQueja.jsx';
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -9,6 +13,14 @@ function App() {
   return (
     <>
       <div>
+        <Routes>
+          <Route path="/detalle" element={<Detalle />} />
+          <Route path="/listado" element={<ListadoGeneral />} />
+          <Route path="/nuevaqueja" element={<NuevaQueja />} />
+          <Route path="/" element={<ListadoGeneral />} /> {/* expecting home, this rute is optional */}
+
+        </Routes>
+
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
