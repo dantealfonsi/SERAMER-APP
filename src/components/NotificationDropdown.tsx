@@ -29,9 +29,10 @@ export default function NotificationDropdown({ notifications }: NotificationDrop
       </button>
 
       <ul
-        className="header__dropdown dropdown-menu dropdown-menu-end"
+        className="header__menu dropdown-menu dropdown-menu-end"
         aria-labelledby="notificationDropdown"
       >
+        <p className="header__notification">Notificaciones:</p>
         {notifications.length > 0 ? (
           notifications.map((notification) => (
             <li key={notification.id}>
