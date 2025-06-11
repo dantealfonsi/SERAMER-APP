@@ -1,5 +1,6 @@
 import Navbar from "../layouts/Navbar"
 import Sidebar from "../layouts/Sidebar"
+/* import showToast from "../components/Toast"; */
 
 const mockNotifications = [
   { id: "1", message: "Cobranza pendiente: Factura #1234" },
@@ -32,6 +33,18 @@ const mockNotifications = [
 ];
 
 export default function Dashboard() {
+  /* Forma de utilizar toast */
+  /* const handleClick = () => {
+    showToast({
+      title: 'Lorem ipsusm dolor sit amet',
+      message: 'lorem ipsus dolor sit amet, consectetur adipiscing elit.',
+      type: 'success',
+      options: {
+        autoClose: 3000,
+      }
+    });
+  }; */
+  
   return (
     <div className="db-body container-fluid min-vh-100">
       <div className="row content-general">
@@ -40,6 +53,8 @@ export default function Dashboard() {
         <main className="main-enter main-enter d-flex flex-column align-items-center col-lg-10">
           {/* Barra de navegacion */}
           <Navbar notifications={mockNotifications} />
+          {/* Eliminar boton uso solo prueba */}
+          {/* <button onClick={handleClick}>Guardar</button> */}
         </main>
       </div>
     </div>
