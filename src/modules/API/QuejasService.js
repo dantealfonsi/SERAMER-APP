@@ -2,7 +2,7 @@
 service para manejar las quejas
 Este servicio se encarga de realizar las peticiones a la API para obtener, crear y asignar quejas.
 */
-const HOST ="http://localhost:3000/api/quejas";
+const HOST ="http://www.localhost/SERAMER-PLATFORM/server.php";
 
 
 async function getQuejas(filtros = {}) {
@@ -139,7 +139,7 @@ async function escalateToInfraction(idQueja, datosInfraccion)  {
 }
 
 async function getTiposQueja() {
-    return await fetch(`${HOST}/tipos`) 
+    return await fetch(`${HOST}?petitions=tipos`) 
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');

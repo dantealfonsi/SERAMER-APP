@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { getQuejas } from '../services/quejasService';
+import { getQuejas } from '../../../API/quejasService';
 import './Spinner.css'; 
 
 function ListadoGeneral() {
   const [quejas, setQuejas] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
-  const [filters, setFilters] = useState({ type: 'all', status: 'pending' });
+  const [filters, setFilters] = useState({petitions: 'getquejas', type: 'all', status: 'pending' });
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(10); // Podría ser también un estado si el usuario lo puede cambiar
 
@@ -80,10 +80,10 @@ function ListadoGeneral() {
         ) : (
             <ul>
                 {quejas.map(queja => (
-                    <li key={queja.id}>
-                        <h3>{queja.title}</h3>
-                        <p>Tipo: {queja.type} - Estado: {queja.status}</p>
-                        <p>{queja.description}</p>
+                    <li key={queja.id_queja}>
+                        <h3>{queja.description_queja}</h3>
+                        <p>Tipo: {queja.tipo_queja} - Estado: {queja.estado_queja}</p>
+                        <p>{queja.observaciones_internas}</p>
                     </li>
                 ))}
             </ul>

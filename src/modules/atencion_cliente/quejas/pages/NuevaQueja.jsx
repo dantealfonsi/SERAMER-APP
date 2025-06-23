@@ -1,8 +1,8 @@
 // Importamos React y hooks necesarios
 import React, { useState, useEffect, useCallback } from 'react'; // Importamos useCallback para el debounce
-import { createQueja } from '../services/quejasService'; // Asegúrate de la ruta correcta
-import { getTiposQueja } from '../services/quejasService'; // Servicio para tipos de queja
-import { searchAdjudicatarios } from '../services/quejasService'; // Servicio para adjudicatarios
+import { createQueja } from '../../../API/quejasService'; // Asegúrate de la ruta correcta
+import { getTiposQueja } from '../../../API/quejasService'; // Servicio para tipos de queja
+import { searchAdjudicatarios } from '../../../API/quejasService'; // Servicio para adjudicatarios
 
 // Función auxiliar para debounce (evitar muchas peticiones al escribir)
 const debounce = (func, delay) => {
@@ -13,7 +13,7 @@ const debounce = (func, delay) => {
     };
 };
 
-function NuevaQueja() {
+function NuevaQueja() {    
     // --- 2. Gestionar el Estado del Formulario ---
     const [formData, setFormData] = useState({
         adjudicatarioId: '',
