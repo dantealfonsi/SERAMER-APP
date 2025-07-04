@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { getQuejas } from '../../../API/quejasService';
+import { getQuejas } from '../../../API/QuejasService';
 import './Spinner.css'; 
+import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 function ListadoGeneral() {
   const [quejas, setQuejas] = useState([]);
@@ -39,7 +41,8 @@ function ListadoGeneral() {
   };
 
   if (isLoading) {
-      return <div>Cargando quejas...<div className="spinner-container"><div className="spinner"></div></div></div>;
+      toast.success('¡Queja cargadas exitosamente!');
+      return <div>Cargando quejas...<div className="spinner-container"><div className="spinner"></div></div></div>;      
   }
 
   if (error) {
@@ -48,6 +51,11 @@ function ListadoGeneral() {
 
 
   return (
+    <>
+        <ul>
+          <li><Link to="/detalle">Detalles</Link></li>
+          <li><Link to="/nuevaqueja">Nueva Queja</Link></li>
+        </ul>
     <div>
         <h1>Listado de Quejas</h1>
 
@@ -101,6 +109,7 @@ function ListadoGeneral() {
             </button>
         </div>
     </div>
+    </>
 );
 
 }

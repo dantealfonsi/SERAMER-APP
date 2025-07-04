@@ -1,4 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import React from 'react';
 import Detalle from './modules/atencion_cliente/quejas/pages/Detalle.jsx';
 import ListadoGeneral from './modules/atencion_cliente/quejas/pages/ListadoGeneral.jsx';
 import NuevaQueja from './modules/atencion_cliente/quejas/pages/NuevaQueja.jsx';
@@ -15,6 +18,17 @@ function App() {
           <Route path="/nuevaqueja" element={<NuevaQueja />} />
           <Route path="/" element={<ListadoGeneral />} /> {/* expecting home, this rute is optional */}
         </Routes>
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+        />        
         <p className="read-the-docs">
           SERAMER-APP
         </p>
