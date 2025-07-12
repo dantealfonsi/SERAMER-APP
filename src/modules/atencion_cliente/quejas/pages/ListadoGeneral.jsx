@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { getQuejas } from '../../../API/QuejasService';
-import './Spinner.css'; 
+import '../../../../assets/Spinner.css'; 
 import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
 

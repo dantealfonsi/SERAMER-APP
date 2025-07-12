@@ -5,6 +5,7 @@ import React from 'react';
 import Detalle from './modules/atencion_cliente/quejas/pages/Detalle.jsx';
 import ListadoGeneral from './modules/atencion_cliente/quejas/pages/ListadoGeneral.jsx';
 import NuevaQueja from './modules/atencion_cliente/quejas/pages/NuevaQueja.jsx';
+import AlertasCumplimientoPage from './modules/fiscalizacion/alertas/AlertasCumplimientoPage.jsx';
 import './App.css'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/detalle" element={<Detalle />} />
           <Route path="/listado" element={<ListadoGeneral />} />
           <Route path="/nuevaqueja" element={<NuevaQueja />} />
+          <Route path="/fiscalizacion/alertas" element={<AlertasCumplimientoPage />} />
           <Route path="/" element={<ListadoGeneral />} /> {/* expecting home, this rute is optional */}
         </Routes>
         <ToastContainer
