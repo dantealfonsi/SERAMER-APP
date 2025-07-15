@@ -53,6 +53,7 @@ function ListadoGeneral() {
   return (
     <>
         <ul>
+          <li><Link to="/fiscalizacion/alertas">Alertas de Cumplimientos</Link></li>  
           <li><Link to="/detalle">Detalles</Link></li>
           <li><Link to="/nuevaqueja">Nueva Queja</Link></li>
         </ul>

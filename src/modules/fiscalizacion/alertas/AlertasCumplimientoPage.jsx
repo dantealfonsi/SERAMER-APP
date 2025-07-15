@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { getAlertasCumplimiento } from '../../API/UseAlertas';
 import '../../../assets/Spinner.css'; // Asegúrate de que la ruta sea correcta
+import { Link } from 'react-router-dom';
 
 function AlertasCumplimientoPage() {
   const [alertas, setAlertas] = useState([]);
@@ -9,6 +10,10 @@ function AlertasCumplimientoPage() {
   const [filters, setFilters] = useState({ petitions: 'alertas_cumplimiento', type: 'all', status: 'pending' });
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(10); // Podría ser también un estado si el usuario lo puede cambiar
+
+  const styleh1 = {
+    backgroundColor: '#f0f0f0'
+  }
 
   useEffect(() => {
     const fetchAlertas = async () => {
@@ -46,8 +51,13 @@ function AlertasCumplimientoPage() {
   }
 
   return (
+    <>
+      <ul>
+        <li><Link to="/fiscalizacion/crear_alerta">Crear Una Alerta</Link></li>
+        <li><Link to="/nuevaqueja">Nueva Queja</Link></li>
+      </ul>
     <div>
-      <h1>Listado de Alertas de Cumplimiento</h1>
+      <h1 style={styleh1}>Listado de Alertas de Cumplimiento</h1>
       {/* Aquí podrías agregar filtros y paginación */}
       <ul>
         {alertas.map(alerta => (
@@ -55,6 +65,7 @@ function AlertasCumplimientoPage() {
         ))}
       </ul>
     </div>
+    </>
   );
 }
 

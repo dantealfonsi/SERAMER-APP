@@ -6,6 +6,9 @@ import Detalle from './modules/atencion_cliente/quejas/pages/Detalle.jsx';
 import ListadoGeneral from './modules/atencion_cliente/quejas/pages/ListadoGeneral.jsx';
 import NuevaQueja from './modules/atencion_cliente/quejas/pages/NuevaQueja.jsx';
 import AlertasCumplimientoPage from './modules/fiscalizacion/alertas/AlertasCumplimientoPage.jsx';
+import CrearAlerta from './modules/fiscalizacion/alertas/CrearAlerta.jsx';
+import CrearTipoAlerta from './modules/fiscalizacion/alertas/CrearTipoAlerta.jsx';
+import CrearAdjudicatario from './modules/fiscalizacion/alertas/CrearAdjudicatario.jsx';
 import './App.css'
 
 function App() {
@@ -18,6 +21,9 @@ function App() {
           <Route path="/listado" element={<ListadoGeneral />} />
           <Route path="/nuevaqueja" element={<NuevaQueja />} />
           <Route path="/fiscalizacion/alertas" element={<AlertasCumplimientoPage />} />
+          <Route path="/fiscalizacion/crear_alerta" element={<CrearAlerta />} />
+          <Route path="/fiscalizacion/tipoalerta" element={<CrearTipoAlerta />} />
+          <Route path="/fiscalizacion/adjudicatario" element={<CrearAdjudicatario />} />
           <Route path="/" element={<ListadoGeneral />} /> {/* expecting home, this rute is optional */}
         </Routes>
         <ToastContainer
