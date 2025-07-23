@@ -102,7 +102,7 @@ $font-title: 'Tesla', sans-serif;
 }
 
 /* tf un poco mas grande */
-@include respond(xs){
+/* @include respond(xs){
   .form{
     &__group{
       width: 85%;
@@ -129,9 +129,9 @@ $font-title: 'Tesla', sans-serif;
     }
   }
 }
-
+ */
 /* Tf tipo tablet */
-@include respond(custom-md){
+/* @include respond(custom-md){
   .article {
     &__h1 {
       font-size: 3em;
@@ -172,10 +172,10 @@ $font-title: 'Tesla', sans-serif;
       width: 8%;
     }
   }
-}
+} */
 
 /* pc grandes */
-@include respond(xl){
+@include respond(laptop){
 
   .main-login{
     background-image: linear-gradient(
@@ -288,7 +288,7 @@ $font-title: 'Tesla', sans-serif;
 }
 
 /* Pc mas grandes*/
-@include respond(custom-xl){
+@include respond(desktop-lg){
   .article {
     &__h1 {
       font-size: 3.2em;

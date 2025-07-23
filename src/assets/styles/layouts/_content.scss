@@ -1,6 +1,6 @@
 @use "../abstracts" as *;
 
-@include respond(xl){
+@include respond(laptop){
   .content-general {
     display: grid;
     grid-template-columns: 1.2fr 6fr;

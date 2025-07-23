@@ -1,15 +1,15 @@
 @use "../abstracts" as *;
 
 
-@include respond(xl){
+@include respond(laptop){
   .top-section{
+    
 
     &__title{
       color: #182837;
       font-size: 1.3rem;
       font-weight: 600;
       text-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      margin: 0;
     }
 
     &__button{

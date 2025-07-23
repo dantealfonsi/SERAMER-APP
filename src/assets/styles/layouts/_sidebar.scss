@@ -1,6 +1,6 @@
 @use "../abstracts" as *;
 
-@include respond(xl) {
+@include respond(laptop) {
   .sidebar {
     background: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -61,7 +61,7 @@
     }
 
     &__system-identifier {
-      font-size: 0.9em;
+      font-size: 0.8rem;
       color: #182837;
       font-weight: bold;
       margin-bottom: 0;
@@ -80,7 +80,7 @@
       width: 100%;
       color: #6d6d6d !important;
       border-radius: 5px;
-      font-size: 0.8rem;
+      font-size: 0.75rem !important;
       text-align: center;
       text-decoration: none;
 
@@ -114,14 +114,14 @@
 
     &__help-title {
       color: #ffffff;
-      font-size: 1rem;
+      font-size: 0.9rem;
       font-weight: 700;
       margin-bottom: 2%;
     }
 
     &__help-description {
       color: #d6ebff;
-      font-size: 0.75rem;
+      font-size: 0.65rem;
       font-weight: 600;
       margin-bottom: 2%;
     }
@@ -135,7 +135,7 @@
       transition: box-shadow 0.2s ease;
       width: 70%;
       padding: 0.5rem 0.3rem;
-      font-size: 0.75rem;
+      font-size: 0.65rem;
       font-weight: 600;
       margin-bottom: 1%;
 
@@ -171,9 +171,10 @@
     }
 
     &__submenu-link {
-      font-size: 0.75rem;
+      font-size: 0.75rem !important;
       color: #5c5c5c;
       border-radius: 5px;
+      display: flex !important;;
 
       &:hover {
         background-color: #d6ebff;

@@ -1,6 +1,6 @@
 @use "../abstracts" as *;
 
-@include respond(xl) {
+@include respond(laptop) {
   .db-body {
     background: #edfaff;
   }

@@ -1,18 +1,18 @@
 @use "../abstracts" as *;
 
 
-@include respond(xl){
+@include respond(laptop){
   .header {
     padding: 0% 2%;
   
     &__title {
-      font-size: 1.25rem;
+      font-size: 1.15rem;
       color: #182837;
       font-weight: 600;
     }
   
     &__sub-title {
-      font-size: 1.05rem;
+      font-size: 0.95rem;
       color: #6d6d6d;
     }
 
@@ -42,7 +42,7 @@
     }
 
     &__notification{
-      font-size: 1.05rem;
+      font-size: 0.9rem;
       color: #6d6d6d;
       font-weight: 600;
       border-bottom: 1px solid #6d6d6d;
@@ -65,7 +65,7 @@
 
     &__menu {
       width: 30rem !important;
-      font-size: 0.9rem !important;
+      font-size: 0.85rem !important;
       border-radius: 10px !important;
       border: 1px solid #d6ebff !important;
       padding: 1rem !important;
@@ -75,7 +75,7 @@
       transition: opacity 0.3s ease, transform 0.3s ease;
       overflow-wrap: break-word;
       color: #6d6d6d !important;
-      max-height: 40rem;
+      max-height: 30rem;
       overflow-y: auto;
       padding: 0 !important;
   

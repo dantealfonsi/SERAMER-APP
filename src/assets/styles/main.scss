@@ -8,14 +8,13 @@
 @use "layouts/content";
 /* Components */
 @use "components/forms";
-@use "components/table";
 @use "components/loader";
 /* Pages */
 @use "page/log-in";
 @use "page/recover-password";
 @use "page/dashboard-rc-dept";
 
-$route-img-background: "../img/background.jpg";
+$route-img-background: "/background.jpg";
 
 body {
   background: url("#{$route-img-background}") no-repeat center / cover fixed;

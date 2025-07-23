@@ -1,7 +1,7 @@
 @use "../abstracts" as *;
 
 
-@include respond(xl){
+@include respond(laptop){
 
   .form-component {
     background: #fff;
@@ -60,6 +60,8 @@
     /* Revisar estilo quizas inutil */
     &__button-canceled{
       width: 100%;
+      display: flex;
+      justify-content: center;
       background: #005fcc;
       padding: 5%;
       color: #d6ebff;
